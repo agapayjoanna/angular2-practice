@@ -2,7 +2,33 @@
     <p>{{title}}</p>
     <ul class="selection">
         <li *ngFor="let userGroup of userGroups">
-            <a href="#"><div class="userGroup">{{userGroup.name}}</div></a>
+            <a href="#">
+                <div class="userGroup" data-toggle="modal" [attr.data-target]="'#' + userGroup.id">{{userGroup.name}}</div>
+            </a>
+            <!-- Modal start-->
+            <div class="modal fade modal-admin" id="{{userGroup.id}}" role="dialog">
+                <div class="modal-dialog">
+                
+                    <!-- Modal content-->
+                    <div class="modal-content" style="background:grey">
+                        <div class="modal-header">
+                            <h4 class="modal-title lead" style="font-weight: 200px;">{{userGroup.name}}</h4>
+                            <p style="color:#ffff1; text-align:left;">{{userGroup.description}}</p>
+                        </div>
+                        
+                        <div *ngFor="#item of userGroup?.detail" class="modal-body">
+                            <a href="{{item.url}}">
+                                <div>
+                                    <div style="padding:15px; text-align:left; width:165px; float:left">{{item.groupName}}</div>
+                                    <div style="padding:15px; text-align:left; width:30px;">></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <!-- Modal end-->
         </li>
     </ul>
 </div>

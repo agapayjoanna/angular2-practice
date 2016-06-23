@@ -87,7 +87,7 @@ p.tagline {
 }
 .user-group p {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom:0px;
 }
 ul.selection li {
     display: inline-flex;
