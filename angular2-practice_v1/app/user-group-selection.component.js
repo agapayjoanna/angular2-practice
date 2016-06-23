@@ -34,7 +34,7 @@ var UserGroupSelectionComponent = (function () {
     UserGroupSelectionComponent = __decorate([
         core_1.Component({
             selector: 'div.user-selection',
-            templateUrl: 'app/user-group-selection.component.html'
+            templateUrl: 'app/html/user-group-selection.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], UserGroupSelectionComponent);

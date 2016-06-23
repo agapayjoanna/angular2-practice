@@ -15,7 +15,7 @@ var LoginPanelComponent = (function () {
     LoginPanelComponent = __decorate([
         core_1.Component({
             selector: 'div.login-panel',
-            templateUrl: 'app/login-panel.component.html'
+            templateUrl: 'app/html/login-panel.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], LoginPanelComponent);

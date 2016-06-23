@@ -17,7 +17,7 @@ const USERGROUPS: UserGroup[] = [
 
 @Component({
     selector: 'div.user-selection',
-    templateUrl: 'app/user-group-selection.component.html'
+    templateUrl: 'app/html/user-group-selection.component.html'
 })
 
 export class UserGroupSelectionComponent { 

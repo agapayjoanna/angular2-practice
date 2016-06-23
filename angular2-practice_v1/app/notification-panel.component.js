@@ -15,7 +15,7 @@ var NotificationPanelComponent = (function () {
     NotificationPanelComponent = __decorate([
         core_1.Component({
             selector: 'div.notifications-container',
-            templateUrl: 'app/notification-panel.component.html'
+            templateUrl: 'app/html/notification-panel.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], NotificationPanelComponent);

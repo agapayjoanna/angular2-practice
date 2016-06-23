@@ -15,7 +15,7 @@ var BackgroundComponent = (function () {
     BackgroundComponent = __decorate([
         core_1.Component({
             selector: 'div.container',
-            templateUrl: 'app/background.component.html'
+            templateUrl: 'app/html/background.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], BackgroundComponent);
