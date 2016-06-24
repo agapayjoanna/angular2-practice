@@ -9,19 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var loginoptions_directive_1 = require('./loginoptions.directive');
-var LoginPanelComponent = (function () {
-    function LoginPanelComponent() {
+var LoginOptionsDirective = (function () {
+    function LoginOptionsDirective(el, renderer) {
+        this.el = el;
+        this.renderer = renderer;
     }
-    LoginPanelComponent = __decorate([
-        core_1.Component({
-            selector: 'div.login-panel',
-            templateUrl: 'app/html/login-panel.component.html',
-            directives: [loginoptions_directive_1.LoginOptionsDirective]
+    LoginOptionsDirective.prototype.onclick = function () {
+        this.renderer.setElementStyle(this.el, 'color', 'black');
+        console.log(this.el.nativeElement.getAttribute("login-method"));
+    };
+    LoginOptionsDirective = __decorate([
+        core_1.Directive({
+            selector: '[login-method]',
+            host: {
+                '(click)': 'onClick()'
+            }
         }), 
-        __metadata('design:paramtypes', [])
-    ], LoginPanelComponent);
-    return LoginPanelComponent;
+        __metadata('design:paramtypes', [core_1.ElementRef, core_1.Renderer])
+    ], LoginOptionsDirective);
+    return LoginOptionsDirective;
 }());
-exports.LoginPanelComponent = LoginPanelComponent;
-//# sourceMappingURL=login-panel.component.js.map
+exports.LoginOptionsDirective = LoginOptionsDirective;
+//# sourceMappingURL=loginoptions.directive.js.map
