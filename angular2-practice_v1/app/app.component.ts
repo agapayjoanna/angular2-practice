@@ -16,7 +16,7 @@ import { FooterComponent } from './footer.component';
             </div>
         </header>        
         <div class="container"></div>
-        <div class="login-panel"></div>
+        <div class="login-wrapper"></div>
         <div class="user-selection"></div>        
         <div class="footer"></div>
     `,

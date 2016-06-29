@@ -109,7 +109,7 @@ ul.selection li a{
 .userGroup {
     padding: 18px 10px;
 }
-.login-panel {
+.login-panel , .login-panel-with-id{
     position: absolute;
     top: 280px;
     right: 45px;
@@ -122,6 +122,19 @@ ul.selection li a{
     -moz-box-shadow: -1px -1px 6px #666;
     box-shadow: -1px -1px 6px #666;        
 }
+.login-header .back {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 23px 0 0 10px;
+}
+.login-header .back a{
+    color: #000;
+}
+.login-header p.login-user-id {
+    float: left;
+    margin: 24px 0 43px 60px;
+}
 .login-header .welcome {
     font-size: 30px;
     color: #880D13;
@@ -132,6 +145,19 @@ ul.selection li a{
 .login-header p.wel-msg{
     margin: 0 0 25px 28px;
 }
+.login-btn {
+    background-color: #880D13;
+    color: #fff !important;
+}
+.login-with-id .form-control {
+    height: 39px;
+}
+.login-with-id .boxWide:first-child {
+    width: 60%
+} 
+.login-with-id .boxWide:last-child {
+    width: 40%
+} 
 .login-msg {
     margin: 0px 28px 10px;
 }
@@ -342,3 +368,4 @@ a.text-danger:hover, a.text-danger:focus {
 .divider-1x{
 	margin-top: 15px;
 }
+

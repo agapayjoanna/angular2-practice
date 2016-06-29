@@ -10,14 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var loginoptions_directive_1 = require('./loginoptions.directive');
+var animation_service_1 = require('./animation.service');
 var LoginPanelComponent = (function () {
     function LoginPanelComponent() {
     }
     LoginPanelComponent = __decorate([
         core_1.Component({
-            selector: 'div.login-panel',
+            selector: 'div.login-wrapper',
             templateUrl: 'app/html/login-panel.component.html',
-            directives: [loginoptions_directive_1.LoginOptionsDirective]
+            directives: [loginoptions_directive_1.LoginOptionsDirective],
+            providers: [animation_service_1.AnimationService]
         }), 
         __metadata('design:paramtypes', [])
     ], LoginPanelComponent);

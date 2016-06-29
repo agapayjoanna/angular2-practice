@@ -20,7 +20,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "    \n        <div class=\"bold notifications-container\"></div>\n        <header>\n            <div class=\"logo\">\n                <img src=\"app/img/logo.png\"/>\n            </div>\n        </header>        \n        <div class=\"container\"></div>\n        <div class=\"login-panel\"></div>\n        <div class=\"user-selection\"></div>        \n        <div class=\"footer\"></div>\n    ",
+            template: "    \n        <div class=\"bold notifications-container\"></div>\n        <header>\n            <div class=\"logo\">\n                <img src=\"app/img/logo.png\"/>\n            </div>\n        </header>        \n        <div class=\"container\"></div>\n        <div class=\"login-wrapper\"></div>\n        <div class=\"user-selection\"></div>        \n        <div class=\"footer\"></div>\n    ",
             directives: [
                 notification_panel_component_1.NotificationPanelComponent,
                 background_component_1.BackgroundComponent,
