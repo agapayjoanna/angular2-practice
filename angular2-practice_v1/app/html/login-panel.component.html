@@ -1,7 +1,7 @@
 <div class="login-panel">
     <div class="login-options-1">
         <div class="login-header">
-            <div class="toggle-notification-button">!</div>
+            <div class="toggle-notification-button" [ngStyle]="setStyles()" (click)="toggleNotifPanelState()">!</div>
             <p class="welcome">WELCOME!</p>
             <p class="wel-msg">Please select your login method</p>
         </div>
@@ -28,7 +28,7 @@
 <div class="login-panel-with-id" loginOptions #loginOptions="login-options" hidden>
     <div class="login-userid">
         <div class="login-header">
-            <div class="toggle-notification-button">!</div>
+            <div class="toggle-notification-button" [ngStyle]="setStyles()" (click)="toggleNotifPanelState()">!</div>
             <p class="welcome"></p>
             <div class="back pull-left"><a href="#" (click)="loginOptions.showLoginPanel()"><span class="glyphicon glyphicon-chevron-left"></span></a></div>
             <p class="login-user-id">Login with User ID</p>

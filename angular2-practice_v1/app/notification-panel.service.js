@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var BackgroundComponent = (function () {
-    function BackgroundComponent() {
+var mock_notifications_1 = require('./mock-notifications');
+var NotificationPanelService = (function () {
+    function NotificationPanelService() {
     }
-    BackgroundComponent = __decorate([
-        core_1.Component({
-            selector: 'div.bg-container',
-            templateUrl: 'app/html/background.component.html'
-        }), 
+    NotificationPanelService.prototype.getNotifications = function () {
+        return Promise.resolve(mock_notifications_1.NOTIFICATIONS);
+    };
+    NotificationPanelService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], BackgroundComponent);
-    return BackgroundComponent;
+    ], NotificationPanelService);
+    return NotificationPanelService;
 }());
-exports.BackgroundComponent = BackgroundComponent;
-//# sourceMappingURL=background.component.js.map
+exports.NotificationPanelService = NotificationPanelService;
+//# sourceMappingURL=notification-panel.service.js.map

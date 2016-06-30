@@ -1,18 +1,11 @@
 <div class="row top-bar-info" style="position: relative;">
-    <div id="close-button" class="close-button"></div>
-    <div class="notification-list">
-        <span class="notificationStartSpan">
-            <p class="text-danger">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            <p dir="ltr">
-                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            </p>
-        </span>
+    <div id="close-button" class="close-button" (click)="toggleNotifPanelState()"></div>
+    <span class="notificationStartSpan" *ngFor="let notification of notifications">
+        <p class="text-danger">{{notification.title}}</p>
+        <p dir="ltr">
+            {{notification.content}}
+        </p>
         <div class="divider-1x"></div>
-        <span class="notificationStartSpan">
-            <p class="text-danger">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-            <p dir="ltr">
-                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
-            </p>
-        </span>              
-    </div>
+    </span>  
 </div>
+

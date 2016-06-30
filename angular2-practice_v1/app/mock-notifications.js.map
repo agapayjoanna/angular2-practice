@@ -1,0 +1,1 @@
+{"version":3,"file":"mock-notifications.js","sourceRoot":"","sources":["mock-notifications.ts"],"names":[],"mappings":";AAEW,qBAAa,GAAmB;IACvC;QACG,KAAK,EAAE,gBAAgB;QACvB,OAAO,EAAE,uGAAuG;KAClH;IACD;QACG,KAAK,EAAE,gBAAgB;QACvB,OAAO,EAAE,iEAAiE;KAC5E;IACD;QACG,KAAK,EAAE,gBAAgB;QACvB,OAAO,EAAE,uGAAuG;KAClH;IACD;QACG,KAAK,EAAE,gBAAgB;QACvB,OAAO,EAAE,yOAAyO;KACpP;CACJ,CAAC"}
