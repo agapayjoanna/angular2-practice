@@ -11,7 +11,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var LoginPanelComponent = (function () {
     function LoginPanelComponent() {
+        this.onToggle = new core_1.EventEmitter();
+        this._activeColor = '#fff';
+        this._activeBgColor = '#9f2521';
+        this._inactiveColor = '#9f2521';
+        this._inactiveBgColor = '#fff';
     }
+    LoginPanelComponent.prototype.setStyles = function () {
+        var styles = {
+            'color': this.isNotifActive ? this._activeColor : this._inactiveColor,
+            'background-color': this.isNotifActive ? this._activeBgColor : this._inactiveBgColor
+        };
+        return styles;
+    };
+    LoginPanelComponent.prototype.toggleNotifPanelState = function () {
+        this.isNotifActive = !this.isNotifActive;
+        this.onToggle.emit(this.isNotifActive);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Boolean)
+    ], LoginPanelComponent.prototype, "isNotifActive", void 0);
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], LoginPanelComponent.prototype, "onToggle", void 0);
     LoginPanelComponent = __decorate([
         core_1.Component({
             selector: 'div.login-panel',

@@ -1,5 +1,5 @@
 <div class="login-header">
-    <div class="toggle-notification-button">!</div>
+    <div class="toggle-notification-button" [ngStyle]="setStyles()" (click)="toggleNotifPanelState()">!</div>
     <p class="welcome">WELCOME!</p>
     <p class="wel-msg">Please select your login method</p>
 </div>
